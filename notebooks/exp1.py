@@ -81,8 +81,8 @@ y = df['sentiment']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 import dagshub
 
-mlflow.set_tracking_uri('https://dagshub.com/Nikhil1998-Mogre/EKS-end-to-end.mlflow/')
-dagshub.init(repo_owner='Nikhil1998-Mogre', repo_name='EKS-end-to-end', mlflow=True)
+mlflow.set_tracking_uri('https://dagshub.com/Nikhil1998-Mogre/End-to-End-EKS-Project.mlflow/')
+dagshub.init(repo_owner='Nikhil1998-Mogre', repo_name='End-to-End-EKS-Project', mlflow=True)
 
 # mlflow.set_experiment("Logistic Regression Baseline")
 mlflow.set_experiment("Logistic Regression Baseline")

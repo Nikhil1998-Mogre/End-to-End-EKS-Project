@@ -28,9 +28,9 @@ warnings.filterwarnings("ignore")
 CONFIG = {
     "data_path": "notebooks/data.csv",
     "test_size": 0.2,
-    "mlflow_tracking_uri": "https://dagshub.com/Nikhil1998-Mogre/EKS-end-to-end.mlflow",
+    "mlflow_tracking_uri": "https://dagshub.com/Nikhil1998-Mogre/End-to-End-EKS-Project.mlflow",
     "dagshub_repo_owner": "Nikhil1998-Mogre",
-    "dagshub_repo_name": "EKS-end-to-end",
+    "dagshub_repo_name": "End-to-End-EKS-Project",
     "experiment_name": "Bow vs TfIdf"
 }
 

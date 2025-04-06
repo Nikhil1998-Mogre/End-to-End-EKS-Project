@@ -12,24 +12,24 @@ from src.logger import logging
 
 
 # Below code block is for production use
-dagshub_token = os.getenv("CAPSTONE_TEST")
-if not dagshub_token:
-    raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
+# dagshub_token = os.getenv("CAPSTONE_TEST")
+# if not dagshub_token:
+#     raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
 
-os.environ["MLFLOW_TRACKING_USERNAME"] = dagshub_token
-os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
+# os.environ["MLFLOW_TRACKING_USERNAME"] = dagshub_token
+# os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
 
-dagshub_url = "https://dagshub.com"
-repo_owner = "Nikhil1998-Mogre"
-repo_name = "EKS-end-to-end"
-# Set up MLflow tracking URI
-mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
+# dagshub_url = "https://dagshub.com"
+# repo_owner = "Nikhil1998-Mogre"
+# repo_name = "EKS-end-to-end"
+# # Set up MLflow tracking URI
+# mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
 # -------------------------------------------------------------------
 
 # Below code block is for local use
 # -------------------------------------------------------------------------------------
-# mlflow.set_tracking_uri('https://dagshub.com/Nikhil1998-Mogre/EKS-end-to-end.mlflow/')
-# dagshub.init(repo_owner='Nikhil1998-Mogre', repo_name='EKS-end-to-end', mlflow=True)
+mlflow.set_tracking_uri('https://dagshub.com/Nikhil1998-Mogre/End-to-End-EKS-Project.mlflow/')
+dagshub.init(repo_owner='Nikhil1998-Mogre', repo_name='End-to-End-EKS-Project', mlflow=True)
 
 # -------------------------------------------------------------------------------------
 

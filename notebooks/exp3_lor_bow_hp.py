@@ -21,8 +21,8 @@ warnings.filterwarnings("ignore")
 # os.environ["MLFLOW_DISABLE_ARTIFACTS_DOWNLOAD"] = "1"
 
 # Set MLflow Tracking URI & DAGsHub integration
-MLFLOW_TRACKING_URI = "https://dagshub.com/Nikhil1998-Mogre/EKS-end-to-end.mlflow"
-dagshub.init(repo_owner="Nikhil1998-Mogre", repo_name="EKS-end-to-end", mlflow=True)
+MLFLOW_TRACKING_URI = "https://dagshub.com/Nikhil1998-Mogre/End-to-End-EKS-Project.mlflow"
+dagshub.init(repo_owner="Nikhil1998-Mogre", repo_name="End-to-End-EKS-Project", mlflow=True)
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 mlflow.set_experiment("LoR Hyperparameter Tuning")
 
